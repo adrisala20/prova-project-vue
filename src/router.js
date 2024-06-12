@@ -1,17 +1,17 @@
 import {createRouter, createWebHistory} from 'vue-router';
 
-const router = createRouter({//è un metodo che ha un oggetto
-    history: createWebHistory(), //è in metodo 
-    routes: [ // è un array do oggetti, che hanno una chiave; tutte le rotte(ORDINATE)
+const router = createRouter({
+    history: createWebHistory(),
+    routes: [ 
   {
-    path: '/', //un percorso
-    name:'home', //un nome
-    component: AppHome, // che gestisce la rotta
+    path: '/', 
+    name:'home', 
+    component: AppHome, 
   }  
   {
-    path: '/', //un percorso
-    name:'projects', //un nome
-    component: ProjectList, // da creare
+    path: '/', 
+    name:'projects', 
+    component: ProjectList, 
   },
   {
     path:"/projects/:slug",

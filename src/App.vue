@@ -1,6 +1,5 @@
 <template>
   <h1 class="text-center">Ciao</h1>
-  <i class="fa fa-solid fa-home"></i>
   <ul>
     <li v-for="project in projects" :key="project.id">{{ project.title }}
       <img :src="store.imgBasePath + project.image" :alt="project.title">
